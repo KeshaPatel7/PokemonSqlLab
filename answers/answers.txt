@@ -1,0 +1,39 @@
+CREATE DATABASE pokemon;
+SHOW SCHEMAS;
+
+SOURCE pokemon_pokemon_trainer.sql;
+SHOW TABLES;
+
+SOURCE pokemon_pokemons.sql;
+SHOW TABLES;
+
+SOURCE pokemon_trainers.sql;
+SHOW TABLES;
+
+SOURCE pokemon_types.sql;
+SHOW TABLES;
+
+Part 2: Simple Selects and Counts
+
+1. What are all the types of pokemon that a pokemon can have?
+SELECT * FROM types
+
+2. What is the name of the pokemon with id 45?
+SELECT * FROM pokemons WHERE id=45;
+
+3. How many pokemon are there?
+SELECT * FROM pokemons; or SELECT COUNT(name) FROM pokemons;
+
+4. SELECT * FROM pokemons where secondary_type is NOT NULL;
+   SELECT COUNT(*) AS entry_count from pokemons where secondary_type is NOT NULL;
+
+Part 3: Joins and Groups
+
+1.
+
+
+
+
+
+
+
